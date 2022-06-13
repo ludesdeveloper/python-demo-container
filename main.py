@@ -4,7 +4,7 @@ from sys import argv
 app = Flask(__name__)
 
 
-@app.route("/")
+@app.route("/"+argv[1])
 def hello_world():
     return argv[1]
 
